@@ -592,13 +592,7 @@ def search_quote_history(search_terms: List[str], limit: int = 5) -> List[Dict]:
 # Set up and load your env parameters and instantiate your model.
 dotenv.load_dotenv()
 
-"""Pydantic AI multi-agent implementation.
-
-The agents below are registered with pydantic-ai and each worker owns the tools
-for its business function. The actual sample evaluation uses deterministic
-delegation through MunderDifflinOrchestrator so it can run locally without an
-LLM API key while still exercising the framework-defined tools.
-"""
+# Pydantic AI multi-agent implementation.
 
 
 @dataclass
